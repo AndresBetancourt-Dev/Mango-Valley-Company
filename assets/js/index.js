@@ -7,23 +7,25 @@ const DEVELOPERS_COUNT = developers.length;
 let currentDeveloper = 0;
 
 const updateDeveloper = () => {
-    developersCarousel.style.transform = `translateX(-${currentDeveloper*100}vw`;
-}
+  developersCarousel.style.transform = `translateX(-${
+    currentDeveloper * 100
+  }vw`;
+};
 
 developersLeft.addEventListener("click", () => {
-  currentDeveloper++;
-  if (currentDeveloper > DEVELOPERS_COUNT - 1) {
-    currentDeveloper = 0;
-  }
-  updateDeveloper();
-  console.log(currentDeveloper)
-});
-
-developersRight.addEventListener("click", () => {
   currentDeveloper--;
   if (currentDeveloper < 0) {
     currentDeveloper = DEVELOPERS_COUNT - 1;
   }
   updateDeveloper();
-  console.log(currentDeveloper)
+  console.log(currentDeveloper);
+});
+
+developersRight.addEventListener("click", () => {
+  currentDeveloper++;
+  if (currentDeveloper > DEVELOPERS_COUNT - 1) {
+    currentDeveloper = 0;
+  }
+  updateDeveloper();
+  console.log(currentDeveloper);
 });
