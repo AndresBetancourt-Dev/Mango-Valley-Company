@@ -7,7 +7,7 @@
 
 *{
     box-sizing: border-box;
-    transition: 0.2s ease-in-out;
+    
 }
 
 body{
@@ -15,11 +15,13 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    transition: .5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 body.dark{
     background: #1f1f1f;
     color: white;
+    transition: .5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 /*Header*/
@@ -29,11 +31,34 @@ body.dark{
     box-shadow: var(--default-box-shadow);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .company-title{
     margin: 0;
     padding: var(--default-fill);
+}
+
+.header-toggler{
+    padding-right: 2em;
+}
+
+
+#darkMode-label{
+    padding: 7.5px 20px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+#darkMode-label.light{
+    background-color: white;
+}
+
+#darkMode{
+    visibility: hidden;
 }
 
 /*Developers*/
@@ -51,6 +76,13 @@ body.dark{
     display: flex;
     padding: 2.5em 0px;
     transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 1s;
+   transition-timing-function: ease-in-out;
+}
+
+.developers *{
+    transition: none;
 }
 
 .developers-left,.developers-right{
@@ -94,6 +126,7 @@ body.dark{
     height: auto;
     padding: var(--default-fill);
     border-radius: 10px;
+    transition: none;
 }
 
 .developer-image{
