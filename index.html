@@ -12,6 +12,18 @@
 </head>
 
 <body>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal-image">
+                <img src="" alt="Foto de Desarrollador">
+            </div>
+            <h3 class="modal-title">
+            </h3>
+            <div class="modal-description">
+            </div>
+            <button class="modal-close fas fa-times-circle"></button>
+        </div>
+    </div>
     <header class="header">
         <div class="header-logo">
             <h1 class="company-title">Mango Valley Company Inc.</h1>
@@ -22,6 +34,9 @@
         </div>
     </header>
     <main class="main">
+        <button class="accordion-button">
+            Equipo de Desarrollo
+         </button>
 
         <div class="developers-container">
             <button class="developers-left fas fa-caret-left"></button>
@@ -29,50 +44,61 @@
                 <div class="developer-container">
                     <div class="developer">
                         <div class="developer-image">
-                            <img src="assets/images/andres.png" alt="Foto de Desarrollador">
+                            <img src="assets/images/developers/andres.png" alt="Foto de Desarrollador">
                         </div>
                         <h3 class="developer-title">Andrés David Betancourt</h3>
-                        <p class="developer-description">Lorem ipsum dolor</p>
+                            <ul>
+                                <li><strong>Frontend Developer <br></strong> React.js, Vue.Js</li>
+                                <li><strong>Backend Developer <br></strong> Node.js, Express.js</li>
+                            </ul>
                         <span class="developer-more">Más Detalles...</span>
                     </div>
                 </div>
                 <div class="developer-container">
                     <div class="developer">
                         <div class="developer-image">
-                            <img src="assets/images/andres.png" alt="Foto de Desarrollador">
+                            <img src="assets/images/developers/kevin.jpg" alt="Foto de Desarrollador">
                         </div>
-                        <h3 class="developer-title">Andrés David Betancourt</h3>
-                        <p class="developer-description"></p>
+                        <h3 class="developer-title">Kevin Ivan Ulloa Nepas</h3>
+                            <ul>
+                                <li><strong>Java Developer <br></strong> Swing, FX, Spring, Android</li>
+                            </ul>
                         <span class="developer-more">Más Detalles...</span>
                     </div>
                 </div>
                 <div class="developer-container">
                     <div class="developer">
                         <div class="developer-image">
-                            <img src="assets/images/andres.png" alt="Foto de Desarrollador">
+                            <img src="assets/images/developers/miguel.jpg" alt="Foto de Desarrollador">
                         </div>
-                        <h3 class="developer-title">Andrés David Betancourt</h3>
-                        <p class="developer-description"></p>
+                        <h3 class="developer-title">Miguel Angel Serrate Timarán</h3>
+                            <ul>
+                                <li><strong>Frontend Developer <br></strong>HTML, CSS, Javascript</li>
+                            </ul>
                         <span class="developer-more">Más Detalles...</span>
                     </div>
                 </div>
                 <div class="developer-container">
                     <div class="developer">
                         <div class="developer-image">
-                            <img src="assets/images/andres.png" alt="Foto de Desarrollador">
+                            <img src="assets/images/developers/bill.png" alt="Foto de Desarrollador">
                         </div>
-                        <h3 class="developer-title">Andrés David Betancourt</h3>
-                        <p class="developer-description"></p>
+                        <h3 class="developer-title">Bill Gates</h3>
+                            <ul>
+                                <li><strong>CEO <br></strong>Microsoft, Cascade Investment, TerraPower</li>
+                            </ul>
                         <span class="developer-more">Más Detalles...</span>
                     </div>
                 </div>
                 <div class="developer-container">
                     <div class="developer">
                         <div class="developer-image">
-                            <img src="assets/images/andres.png" alt="Foto de Desarrollador">
+                            <img src="assets/images/developers/mark.jpg" alt="Foto de Desarrollador">
                         </div>
-                        <h3 class="developer-title">Andrés David Betancourt</h3>
-                        <p class="developer-description"></p>
+                        <h3 class="developer-title">Mark Zuckerberg</h3>
+                            <ul>
+                                <li><strong>CEO <br></strong>Facebook, Instagram, Whatsapp, Oculus</li>
+                            </ul>
                         <span class="developer-more">Más Detalles...</span>
                     </div>
                 </div>
@@ -80,22 +106,29 @@
             <button class="developers-right fas fa-caret-right"></button>
         </div>
 
+        <button class="accordion-button">
+            Proyectos Actuales
+        </button>
+
         <div class="projects-container">
             <button class="projects-left fas fa-caret-left"></button>
             <section class="projects">
                 <div class="project-container">
                     <div class="project">
                         <div class="project-image">
-                            <img src="assets/images/map.jpg" alt="Imagen del Proyecto">
+                            <img src="assets/images/projects/map.jpg" alt="Imagen del Proyecto">
                         </div>
-                        <h3 class="project-title">Proyecto 1</h3>
-                        <p class="project-description"></p>
+                        <h3 class="project-title">Colsearch - A Mapbox Project</h3>
+                        <p class="project-description">
+                            Este proyecto se esta llevando a cabo en el curso de Programación Orientada a la Web,
+                            dado por el profesor Diego Loaiza, el proyecto consiste en la visualización de la última posición conocida de las personas usando el servicio de Mapbox y el Stack de Programación WEB MERN (MongoDB, Express.js, React.js, Node.js).
+                        </p>
                     </div>
                 </div>
                 <div class="project-container">
                     <div class="project">
                         <div class="project-image">
-                            <img src="assets/images/gym.jpeg" alt="Imagen del Proyecto">
+                            <img src="assets/images/projects/gym.jpeg" alt="Imagen del Proyecto">
                         </div>
                         <h3 class="project-title">Proyecto 2</h3>
                         <p class="project-description"></p>
@@ -104,7 +137,7 @@
                 <div class="project-container">
                     <div class="project">
                         <div class="project-image">
-                            <img src="assets/images/pizza.jpeg" alt="Imagen del Proyecto">
+                            <img src="assets/images/projects/pizza.jpeg" alt="Imagen del Proyecto">
                         </div>
                         <h3 class="project-title">Proyecto 3</h3>
                         <p class="project-description"></p>
@@ -124,6 +157,8 @@
     <script src="assets/js/DevelopersCarousel.js"></script>
     <script src="assets/js/ProjectsCarousel.js"></script>
     <script src="assets/js/DarkMode.js"></script>
+    <script src="assets/js/Accordion.js"></script>
+    <script src="assets/js/Modal.js"></script>
 </body>
 
 </html>

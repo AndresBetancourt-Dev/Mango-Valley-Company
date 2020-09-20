@@ -18,7 +18,6 @@ projectsLeft.addEventListener("click", () => {
     currentproject = projectS_COUNT - 1;
   }
   updateproject();
-  console.log(currentproject);
 });
 
 projectsRight.addEventListener("click", () => {
@@ -27,5 +26,4 @@ projectsRight.addEventListener("click", () => {
     currentproject = 0;
   }
   updateproject();
-  console.log(currentproject);
 });

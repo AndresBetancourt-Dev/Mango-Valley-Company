@@ -18,7 +18,6 @@ developersLeft.addEventListener("click", () => {
     currentDeveloper = DEVELOPERS_COUNT - 1;
   }
   updateDeveloper();
-  console.log(currentDeveloper);
 });
 
 developersRight.addEventListener("click", () => {
@@ -27,5 +26,4 @@ developersRight.addEventListener("click", () => {
     currentDeveloper = 0;
   }
   updateDeveloper();
-  console.log(currentDeveloper);
 });
