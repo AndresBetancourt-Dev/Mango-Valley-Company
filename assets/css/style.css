@@ -26,7 +26,7 @@ body.dark{
     transition: .5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-body.dark [class$="-left"], body.dark [class$="-right"]{
+body.dark [class$="-left"], body.dark [class$="-right"], body.dark .modal-close{
     color: white;
 }
 
@@ -102,9 +102,13 @@ body.dark .modal{
 }
 
 .modal-description{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.modal-extraInfo{
+    padding: 20px 0px;
 }
 
 .modal-container.active{
@@ -280,6 +284,9 @@ body.dark .modal{
     display: flex;
     padding: 1em 0px;
     transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .projects-left,.projects-right{
